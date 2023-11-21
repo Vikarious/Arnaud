@@ -1,124 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>LiquidSmoke - Accueil</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li>
-            <a href="#">À Propos</a>
-            <ul class="submenu">
-              <li><a href="about.html">Qui sommes nous?</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="menu.html">Nos saveurs</a>
-            <ul class="submenu">
-              <li><a href="menu.html#LiquideFruité">Liquide Fruité</a></li>
-              <li>
-                <a href="menu.html#LiquideFraicheur">Liquide Fraicheur</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="news.html">Actualités</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/custom.css" rel="stylesheet" />
+  <script src="./js/index.js"></script>
+  <title>LiquidSmoke</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <section class="choice">
-          <h1>Nos produits</h1>
-          <section class="menu-section" id="LiquideFruité">
-            <h2>Liquide Fruité</h2>
+        <a class="navbar-brand" href="index.html">LiquidSmoke</a>
+        <img src="./images/Dalle-Ico-LiquidSmoke.png" alt="Brand Logo" style="width: 40px" class="rounded-pill zoom" />
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                À Propos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="about.html">Qui somme nous?</a>
+                <a class="dropdown-item" href="contact.html">Contact</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="redirectToMenu">
+                Nos saveurs
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="menu.html#LiquideFruité">Liquide Fruitée</a>
+                <a class="dropdown-item" href="menu.html#LiquideFraicheur">Liquide Fraicheur</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">Actualités</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-            <div class="menu-item">
-              <img
-                src="./images/LiquideFuité/darkness-100-ml-ninja.png"
-                alt="Darkness"
-              />
-              <p>darkness - ninja</p>
-              <span class="price">22.90€</span>
-            </div>
+  <div class="container">
+    <section class="carte text-center mt-5">
+      <h1 class="display-4">Nos Produits</h1>
 
+      <section class="menu-section" id="LiquideFruité">
+        <h2>Liquide Fruité</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img src="./images/LiquideFuité/darkness-100-ml-ninja.png" alt="Darkness"
+              class="img-fluid rounded-circle" />
+            <p>darkness - ninja</p>
+            <span class="price">22.90€</span>
+          </div>
+
+          <div class="col-md-4 mb-4">
             <div class="menu-item">
-              <img
-                src="./images/LiquideFuité/fruit-du-dragon-jaune-framboise-bleue-frais-50-ml-le-petit-verger.png"
-                alt="Fruit du dragon"
-              />
+              <img src="./images/LiquideFuité/fruit-du-dragon-jaune-framboise-bleue-frais-50-ml-le-petit-verger.png"
+                alt="Fruit du dragon" class="img-fluid rounded-circle" />
               <p>Fruit du Dragon</p>
               <span class="price">14.00€</span>
             </div>
+          </div>
 
+          <div class="col-md-4 mb-4">
             <div class="menu-item">
-              <img
-                src="./images/LiquideFuité/kunai-100-ml-ishiro.png"
-                alt="Kunai"
-              />
+              <img src="./images/LiquideFuité/kunai-100-ml-ishiro.png" alt="Kunai" class="img-fluid rounded-circle" />
               <p>Kunai</p>
               <span class="price">16.20€</span>
             </div>
+          </div>
 
+          <div class="col-md-4 mb-4">
             <div class="menu-item">
-              <img
-                src="./images/LiquideFuité/shuriken-100-ml-ishiro.png"
-                alt="Shuriken"
-              />
+              <img src="./images/LiquideFuité/shuriken-100-ml-ishiro.png" alt="Shuriken"
+                class="img-fluid rounded-circle" />
               <p>Shuriken</p>
               <span class="price">20.99€</span>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-          <section class="menu-section" id="LiquideFraicheur">
-            <h2>Liquide Fraicheur</h2>
-
+      <section class="menu-section" id="LiquideFraicheur">
+        <h2>Liquide Fraicheur</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
             <div class="menu-item">
-              <img
-                src="./images/LiquideFraicheur/freeze-dragon-serpent-50-ml-freeze.png"
-                alt="Freeze Dragon"
-              />
+              <img src="./images/LiquideFraicheur/freeze-dragon-serpent-50-ml-freeze.png" alt="Freeze Dragon"
+                class="img-fluid rounded-circle" />
               <p>Freeze Dragon</p>
               <span class="price">18.80€</span>
             </div>
+          </div>
 
+          <div class="col-md-4 mb-4">
             <div class="menu-item">
-              <img
-                src="./images/LiquideFraicheur/myrtille-givree-60-ml-pack-e-liquide-booster-pulp.webp"
-                alt="Myrtille Grivrée"
-              />
+              <img src="./images/LiquideFraicheur/myrtille-givree-60-ml-pack-e-liquide-booster-pulp.webp"
+                alt="Myrtille Grivrée" class="img-fluid rounded-circle" />
               <p>Myrtille Givrée</p>
               <span class="price">18.80€</span>
             </div>
+          </div>
 
+          <div class="col-md-4 mb-4">
             <div class="menu-item">
-              <img
-                src="./images/LiquideFraicheur/red-wedding-100-ml-medusa.webp"
-                alt="red wedding"
-              />
+              <img src="./images/LiquideFraicheur/red-wedding-100-ml-medusa.webp" alt="red wedding"
+                class="img-fluid rounded-circle" />
               <p>Red Wedding</p>
               <span class="price">22.99€</span>
             </div>
+          </div>
 
-            <div class="menu-item">
-              <img
-                src="./images/LiquideFraicheur/menthe-xtra-givree-10-ml-cirkus.webp"
-                alt="menthe xtra givrée"
-              />
-              <p>Menthe Xtra Givrée</p>
-              <span class="price">5.00€</span>
-            </div>
-          </section>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2023 LiquidSmoke. Tous droits réservés.</p>
-    </footer>
-  </body>
+          <div class="col-md-4 mb-4">
+            <img src="./images/LiquideFraicheur/menthe-xtra-givree-10-ml-cirkus.webp" alt="menthe xtra givrée"
+              class="img-fluid rounded-circle" />
+            <p>Menthe Xtra Givrée</p>
+            <span class="price">5.00€</span>
+          </div>
+        </div>
+  </div>
+  </section>
+  </section>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>© 2023 LiquidSmoke. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
